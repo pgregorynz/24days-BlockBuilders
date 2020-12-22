@@ -1,0 +1,10 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ContentmentHome>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "_layout.cshtml";
+}
+
+@foreach (var item in Model.Contentment)
+{
+	@Html.Partial(item.ContentType.Alias, item)
+}

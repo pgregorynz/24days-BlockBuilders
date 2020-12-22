@@ -1,0 +1,9 @@
+@inherits Umbraco.Web.Mvc.ContentBlockPreviewView
+@{
+    var elementIcon = ViewData.ContainsKey("elementIcon") == true ? ViewData["elementIcon"] : "icon-brick";
+}
+<div class="lk-content-blocks__preview--default">
+    <i class="icon @elementIcon"></i>
+    <h5>@Model.Element.Key</h5>
+    <!-- if you are wondering why this is blank, this is the default contentment preview. Unfortunately I wasn't able to get previews to work -->
+</div>

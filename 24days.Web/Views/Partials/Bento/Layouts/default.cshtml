@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Bento.Core.Models.StackItem>
+@using ContentModels = Umbraco.Web.PublishedModels;
+
+@{
+    var settings = Model.Settings as ContentModels.BentoBlockSettings;
+    var blockBg = settings.BackgroundColor != null && !string.IsNullOrWhiteSpace(settings.BackgroundColor.Label) ? settings.BackgroundColor.Label + "-200" : "white";
+}
+
+<div class="bg-@blockBg">
+
+    @foreach (var area in Model.Areas.Where(x => x.Content != null))
+    {
+        @Html.Partial($"~/Views/Partials/Bento/{area.Content.ContentType.Alias}.cshtml", area.Content)
+    }
+
+</div>

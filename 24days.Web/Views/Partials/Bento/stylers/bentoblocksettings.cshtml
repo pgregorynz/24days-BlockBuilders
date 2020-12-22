@@ -1,0 +1,38 @@
+﻿
+@inherits  UmbracoViewPage<Umbraco.Web.PublishedModels.BentoBlockSettings>
+@{
+    var settings = Model;
+    Guid id = Guid.Empty;
+    string classString = null;
+
+
+    var classList = new List<string>();
+
+    if (settings != null)
+    {
+        id = settings.Key;
+
+        if (settings.BackgroundColor != null && !string.IsNullOrEmpty(settings.BackgroundColor.Label))
+        {
+
+            var blockBg = settings.BackgroundColor != null && !string.IsNullOrWhiteSpace(settings.BackgroundColor.Label) ? settings.BackgroundColor.Label + "-200" : "white";
+            classList.Add($"bg-{blockBg}");
+
+
+        }
+
+     
+    }
+
+    if (classList.Any())
+    {
+        classString = string.Join(" ", classList);
+    }
+
+
+}
+<div class="bento-styler-wrapper">
+    <div class="bento-styler @classString">
+    </div>
+</div>
+

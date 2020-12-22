@@ -1,0 +1,3 @@
+﻿{
+  "javascript": [ "~/app_plugins/blocklist/cta/ctacontroller.js" ],
+}
