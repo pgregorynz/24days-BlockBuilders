@@ -47,8 +47,8 @@
     <Reference Include="AngleSharp, Version=0.9.9.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
       <HintPath>..\packages\AngleSharp.0.9.11\lib\net45\AngleSharp.dll</HintPath>
     </Reference>
-    <Reference Include="Bento.Core, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bento.Core.0.1.0\lib\net45\Bento.Core.dll</HintPath>
+    <Reference Include="Bento.Core, Version=0.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bento.Core.0.1.3\lib\net45\Bento.Core.dll</HintPath>
     </Reference>
     <Reference Include="ClientDependency.Core, Version=1.9.9.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ClientDependency.1.9.9\lib\net45\ClientDependency.Core.dll</HintPath>
@@ -304,6 +304,7 @@
     <Content Include="App_Plugins\Bento\Css\bento.previews.css" />
     <Content Include="App_Plugins\Bento\Css\bento.previews.min.css" />
     <Content Include="App_Plugins\Bento\Directives\Components\bentoblockpreview.component.js" />
+    <Content Include="App_Plugins\Bento\Directives\Components\bentoblocksettingspreview.component.js" />
     <Content Include="App_Plugins\Bento\Directives\Components\blockdoctypegrid.directive.js" />
     <Content Include="App_Plugins\Bento\Directives\Components\blockpicker.directive.js" />
     <Content Include="App_Plugins\Bento\Directives\Components\layout.directive.js" />

@@ -1,8 +1,7 @@
 ﻿<ng-form name="bentoEditForm" ng-controller="bento.stack.editor.controller as vm">
 
 
-		<link ng-repeat="url in vm.cssFonts" data-ng-if="url" rel="stylesheet" data-ng-href="{{vm.trustSrc(url)}}" />
-
+	<link ng-repeat="url in vm.cssFonts" data-ng-if="url" rel="stylesheet" data-ng-href="{{vm.trustSrc(url)}}" />
 
 
 	<div class="bento-stack-toolbar" ng-if="vm.layouts.length > 0">
